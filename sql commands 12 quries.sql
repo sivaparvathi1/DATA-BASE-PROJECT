@@ -10,11 +10,11 @@ enclosed by'"'
 lines terminated by'\n'
 ignore 1 rows
 
---->select * from billing;
---->select * from location;
---->select * from booking;
---->select * from car;
---->select * from customer;
+select * from billing;
+select * from location;
+select * from booking;
+select * from car;
+select * from customer;
 
 
 ---> insert command
