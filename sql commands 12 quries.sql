@@ -31,27 +31,27 @@ update customer set cust_name='NAVYA' where address='OAKBROOK';
  select * from billing
  select booking_id,starting_date from booking;
  --->join statements
-   #select billing.billing_num,billing.rent_ammount
+   select billing.billing_num,billing.rent_ammount
     -> from billing
     -> inner join car
     -> on billing.billing_num=car.billing_num;
-   # select billing.billing_num,billing.rent_ammount
+    select billing.billing_num,billing.rent_ammount
     -> from billing
     -> inner join car
     -> on billing.billing_num=car.billing_num;
-   # select billing.billing_num,billing.rent_ammount
+    select billing.billing_num,billing.rent_ammount
     -> from billing
     -> left join car
     -> on billing.billing_num=car.billing_num;
-    #select billing.billing_num,billing.rent_ammount,billing.penalty_ammount
+    select billing.billing_num,billing.rent_ammount,billing.penalty_ammount
     -> from billing
     -> left join car
     -> on billing.billing_num=car.billing_num;
  --->summary statements
-   # select sum(total_ammount) as final_ammount from billing ;
-   # select sum(rent_ammount) as final_ammount from billing where billing_num=101 ;
-   # select rent_ammount,sum(penalty_Ammount) as total, count(*) as count from billing;
+   select sum(total_ammount) as final_ammount from billing ;
+   select sum(rent_ammount) as final_ammount from billing where billing_num=101 ;
+   select rent_ammount,sum(penalty_Ammount) as total, count(*) as count from billing;
 ---> multi tabvle query
-   # select billing.billing_num,car.car_model from billing,car where billing.billing_num=101;
-   #select billing.billing_num,car.car_model from billing,car;
+   select billing.billing_num,car.car_model from billing,car where billing.billing_num=101;
+   select billing.billing_num,car.car_model from billing,car;
      
